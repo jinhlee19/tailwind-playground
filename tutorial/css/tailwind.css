@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: "suit";
+	src: local("SUIT"), url(font/suit.woff2) format("woff2"),
+		url(font/suit.ttf) format("ttf");
+}

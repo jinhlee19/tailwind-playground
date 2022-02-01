@@ -9,6 +9,9 @@
 		<title>Document</title>
 	</head>
 	<body class="bg-gray-100">
+		<!-- instead of using all elements [mt-6], we can place [space utility] at the parent elements as 'space-y-6' 
+            spacing utilities apply margin top to every single of children element except the first one.    -->
+		<!-- <div class="p-8 py-12 space-y-6"> -->
 		<div class="p-8 py-12">
 			<img class="h-10" src="/img/logo.svg" alt="Workcation" />
 			<img
@@ -16,10 +19,18 @@
 				src="/img/beach-work.jpg"
 				alt="Woman workcationing on the beach"
 			/>
-            <h1 class="mt-6 text-2xl font-bold text-gray-900">You can work from anywhere. <span class="text-indigo-400">Take advantage of it.</span></h1>
-            <p class="mt-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dignissimos cum quaerat itaque nemo possimus nostrum beatae, aut doloremque commodi nihil eaque in consectetur provident rerum pariatur!
-            </p>
+			<h1 class="mt-6 text-2xl font-bold text-gray-900">
+				You can work from anywhere.
+				<span class="inline-block text-indigo-400">Take advantage of it.</span>
+			</h1>
+			<p class="mt-2 text-gray-500">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+				dignissimos cum quaerat itaque nemo possimus nostrum beatae, aut
+				doloremque commodi nihil eaque in consectetur provident rerum pariatur!
+			</p>
+			<button class="mt-4">
+				<a class="inline-block px-5 py-3 bg-indigo-500 rounded-lg shadow-lg text-white uppercase tracking-wider font-medium text-sm" href="#">Book Your Escape</a>
+			</button>
 		</div>
 	</body>
 </html>

@@ -1,7 +1,13 @@
 module.exports = {
-  content: [],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+	content: [
+    // Example content paths...
+    './**/*.html',
+    './public/**/*.html',
+    './src/**/*.{js,jsx,ts,tsx,vue}',
+  ],
+	darkMode: 'media',
+	theme: {
+		extend: {},
+	},
+	plugins: [],
+};

@@ -9,17 +9,19 @@
 		<title>Document</title>
 	</head>
 	<body class="bg-gray-100">
+	<!-- <body class="bg-gray-100 sm:bg-yellow-300 md:bg-gray-600 lg:bg-green-300 xl:bg-blue-300"> -->
+		<!-- mobile-first, sm: 640~, md: 768~, lg: 1024~, xl: 1280~, 2xl: 1536~ -->
 		<!-- instead of using all elements [mt-6], we can place [space utility] at the parent elements as 'space-y-6' 
             spacing utilities apply margin top to every single of children element except the first one.    -->
 		<!-- <div class="p-8 py-12 space-y-6"> -->
-		<div class="p-8 py-12">
+		<div class="p-8 py-12 max-w-screen-md mx-auto ">
 			<img class="h-10" src="/img/logo.svg" alt="Workcation" />
 			<img
-				class="mt-6 rounded-lg shadow-xl"
+				class="mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-64 sm:w-full sm:object-cover object-center"
 				src="/img/beach-work.jpg"
 				alt="Woman workcationing on the beach"
 			/>
-			<h1 class="mt-6 text-2xl font-bold text-gray-900">
+			<h1 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-8 sm:text-4xl">
 				You can work from anywhere.
 				<span class="inline-block text-indigo-400">Take advantage of it.</span>
 			</h1>
@@ -28,8 +30,8 @@
 				dignissimos cum quaerat itaque nemo possimus nostrum beatae, aut
 				doloremque commodi nihil eaque in consectetur provident rerum pariatur!
 			</p>
-			<button class="mt-4">
-				<a class="inline-block px-5 py-3 bg-indigo-500 rounded-lg shadow-lg text-white uppercase tracking-wider font-medium text-sm" href="#">Book Your Escape</a>
+			<button class="mt-4 sm:mt-6">
+				<a class="inline-block px-5 py-3 bg-indigo-500 rounded-lg shadow-lg text-white uppercase tracking-wider font-medium text-sm sm:text-base" href="#">Book Your Escape</a>
 			</button>
 		</div>
 	</body>

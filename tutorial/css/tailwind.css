@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-	font-family: "suit";
-	src: local("SUIT"), url(font/suit.woff2) format("woff2"),
-		url(font/suit.ttf) format("ttf");
+.btn {
+	@apply inline-block px-5 py-3 bg-indigo-500 hover:bg-indigo-400 hover:-translate-y-0.5 transform transition focus:outline-none focus:ring focus:ring-offset-2 focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-600 rounded-lg shadow-lg text-white uppercase tracking-wider font-medium text-sm sm:text-base 2xl:hover:bg-green-500 2xl:hover:text-lg;
 }
+

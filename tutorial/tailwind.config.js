@@ -8,8 +8,11 @@ module.exports = {
 	darkMode: 'media',
 	theme: {
 		extend: {
-			
+			fontSize:["hover"],
 		},
+	},
+	variants: {
+		
 	},
 	plugins: [],
 };

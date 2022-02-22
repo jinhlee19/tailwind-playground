@@ -5,10 +5,9 @@
 } */
 @tailwind utilities;
 
-@layer components{
+@layer components {
 	.btn {
 		@apply inline-block px-5 py-3 focus:outline-none rounded-lg focus:ring focus:ring-offset-2 uppercase tracking-wider font-medium text-sm sm:text-base;
-		
 	}
 	.btn-primary {
 		@apply bg-indigo-500 hover:bg-indigo-400 transition focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-600 text-white uppercase;
@@ -21,4 +20,8 @@
 /* 
 utilties 이전에 @apply를 사용한다. css cascading issue
 또는 @layer component를 통해서 위치를 지정해줌으로써 순서와 관계없이 입력할 수 있다.
+하지만 apply 이용시, css 코드를 중복적으로 만들기때문에 지나치게 사용하는것을 추천하지 않는다.
+Rule to follow: when using apply is to stick to a single html element 
+something like a button, headline and form input.
+a card component와 같이 큰 컴포넌트는 다음 플젝에서..
 */

@@ -11,6 +11,8 @@ import MainSlider from './components/MainSlider';
 import Header from './components/Header';
 import './styles/main.scss';
 import MainNav from './components/MainNav';
+import Videobanner from './components/Videobanner';
+import Footer from './components/Footer';
 
 function App() {
 	const [classes, setClasses] = useState([
@@ -103,13 +105,16 @@ function App() {
 			<MainSlider />
 			<Searchbar />
 			<h2 className="text-[24px] font-semibold text-left">
-				<span className="underline decoration-sky-500 text-[20px]">뉴비를 위한,</span>
+				<span className="underline decoration-sky-500 text-[20px]">Steady Sellers,</span>
 				&nbsp;&nbsp;추천 클래스 모음
 			</h2>
 			<hr className="my-2" />
 			<div className="flex flex-row">
 				<Cards classes={classes} />
 			</div>
+			<Videobanner />
+			
+			<Footer />
 		</div>
 	);
 }

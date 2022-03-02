@@ -97,7 +97,7 @@ function App() {
 	]);
 
 	return (
-		<div className="App max-w-screen-xl mx-auto space-y-2 mt-10">
+		<div className="App max-w-screen-xl mx-auto space-y-2 mt-6">
 			<Header />
 			<MainNav />
 			<MainSlider />

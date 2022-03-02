@@ -8,7 +8,9 @@ import 'swiper/css/bundle';
 import Cards from './components/Cards';
 import Searchbar from './components/Searchbar';
 import MainSlider from './components/MainSlider';
+import Header from './components/Header';
 import './styles/main.scss';
+import MainNav from './components/MainNav';
 
 function App() {
 	const [classes, setClasses] = useState([
@@ -93,14 +95,16 @@ function App() {
 			instructor: '생물쌤',
 		},
 	]);
-	
+
 	return (
 		<div className="App max-w-screen-xl mx-auto space-y-2 mt-10">
+			<Header />
+			<MainNav />
 			<MainSlider />
 			<Searchbar />
 			<h2 className="text-[24px] font-semibold text-left">
 				<span className="underline decoration-sky-500 text-[20px]">뉴비를 위한,</span>
-				 &nbsp;&nbsp;추천 클래스 모음
+				&nbsp;&nbsp;추천 클래스 모음
 			</h2>
 			<hr className="my-2" />
 			<div className="flex flex-row">
